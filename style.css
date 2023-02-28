@@ -1,0 +1,192 @@
+/* fuentes del proyecto*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dosis:wght@200;300;400;600;800&display=swap');
+* {
+    font-family: "Dosis";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem;
+   background-color: #ececec;
+}
+.nav-list {
+   list-style-type: none;
+   display: flex;
+   gap: 1rem;
+}
+.nav-list li a {
+   text-decoration: none;
+   color: #1c1c1c;
+}
+.abrir-menu,
+.cerrar-menu {
+   display: none;
+}
+
+/* para que funcione en celular sin abultar con la lista*/
+@media screen and (max-width: 550px) {
+   .abrir-menu,
+   .cerrar-menu {
+       display: block;
+       border: 0;
+       font-size: 1.25rem;
+       background-color: transparent;
+       cursor: pointer;
+   }
+
+   .abrir-menu {
+       color: #1c1c1c;
+   }
+
+   .cerrar-menu {
+       color: #ececec;
+   }
+
+   .nav {
+       opacity: 0;
+       visibility: hidden;
+       display: flex;
+       flex-direction: column;
+       align-items: end;
+       gap: 1rem;
+       position: absolute;
+       top: 0;
+       right: 0;
+       background-color: #1c1c1c;
+       padding: 2rem;
+       border-end-start-radius: 25%;
+   }
+
+   .nav.visible {
+       opacity: 1;
+       visibility: visible;
+   }
+   
+   .nav-list {
+       flex-direction: column;
+       align-items: end;
+   }
+
+   .nav-list li a {
+       color: #ecececec;
+   }
+}
+
+
+
+/*me presento*/
+.mepresento img{
+   border-radius: 20%;
+   max-width: 120px;
+   padding: 20px 0 0 0;
+}
+.mepresento{
+   background-color: #2e2e2e;
+   background-size: none;
+   background-position: center;
+   color: #ffffff;
+}
+.mepresento{
+   max-width: 1500px;
+   margin: auto;
+   text-align: center;
+   padding: 0 10px;
+}
+.presentacion .fila{
+   display: flex;
+   margin-top: 30px;
+   justify-content: space-between;
+}
+.presentacion{
+   max-width: 1000px;
+   margin: auto;
+   text-align: center;
+}
+.presentacion .saludo{
+   font-size: 2rem;
+   color: yellow;
+   padding: 35px 0 20px 0;
+}
+.presentacion .invitacion{
+   color: #ffa238;
+   padding: 10px 0 20px 0;
+}
+.fila .columna i{
+   color: #ffa238;
+   padding: 5px 5px 5px 5px;
+}
+.fila .columna p{
+   padding: 10px 20px 25px 20px;
+}
+
+/*mis estudios*/
+.misestudios{
+   background: url("fondo-pc-formacion.jpg");
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.formacionacademica .tituloformacion h2{
+   font-size: 2rem;
+   padding: 20px 5px 15px 30px;
+   color: #e2ff03;
+   background-color: #000000;
+}
+.tituladoen h2{
+   padding: 15px 5px 15px 40px;
+   color: #241fae;
+}
+.tituladoen h2 p{
+   font-size: 1.3rem;
+   padding: 15px 5px 0 40px;
+   color: #701f1f;
+}
+
+/*experiencia laboral*/
+.miexperiencia{
+   background: url("trabajo.jpg");
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.miexperiencia .experiencialaboral .cargolaboral .tituloexperiencia{
+   font-size: 2rem;
+   padding: 25px 20px 20px 30px;
+   color: #e2ff03;
+   background-color: #000000;
+   justify-content: end;
+}
+.cargolaboral h2{
+   padding: 15px 5px 15px 40px;
+   color: #241fae;
+}
+.cargolaboral h2 p{
+   font-size: 1.3rem;
+   padding: 15px 5px 0 40px;
+   color: #701f1f;
+}
+
+/*contacto*/    
+.contacto{
+   background-color: #000000;
+   position: relative;
+   padding: 10px 0 0 0;
+}
+.contacto .contactotitulo{
+   text-align: center;
+   font-size: 2rem;
+   color: #ffa238;
+}
+.contacto .contactotitulo .filacontacto ul{
+   text-align: center;
+   display: flex;
+   margin-top: 30px;
+   justify-content: space-between;
+   font-size: 1rem;
+   list-style-type: none;
+}
+.contacto .contactotitulo .filacontacto ul li{
+   padding: 10px 25px;
+}
